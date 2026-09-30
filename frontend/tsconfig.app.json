@@ -22,5 +22,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "../A6.jsx"]
+  "include": ["src", "src/A6.jsx"]
 }

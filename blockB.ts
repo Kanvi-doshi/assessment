@@ -37,12 +37,6 @@ interface roomCard {
   onSelect: (id: number) => void;
 }
 
-// B4
-// React: Custom Hook, Context, Router   3 min · 4 marks
-// ●	useToggle(initial = false) custom hook returning [value, toggle].
-// ●	RoomContext with a Provider exposing favorites and toggleFavorite(id) (skeleton is fine).
-// ●	React Router: routes for /, /rooms/:id and a * 404 page, plus a NavLink to /rooms and reading id via useParams.
-
 // b8
 // · Node: fs, Streams, Events   2 min · 2 marks
 // ●	Read data.txt with fs.promises.readFile and log the number of lines.
@@ -121,5 +115,4 @@ const rooms = await Room.find({
   price: { $gte: 3000 },
 })
   .sort({ price: -1 })
-    .limit(3);
-  
+  .limit(3);

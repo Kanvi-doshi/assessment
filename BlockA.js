@@ -83,10 +83,6 @@ console.log(roomsLeft.value()); // 1
 // ●	The starter has fakeApi(data, ms, shouldFail = false) which returns a Promise. Write async function loadDashboard() that fetches items and categories IN PARALLEL with Promise.all and logs "N rooms across M categories".
 // ●	Wrap it in try/catch. Prove the failure path by passing shouldFail = true to one call and logging "Failed: <message>".
 // ●	WITHOUT running it, write the exact console output order as a comment:
-// console.log("A");
-// setTimeout(() => console.log("B"), 0);
-// Promise.resolve().then(() => console.log("C"));
-// console.log("D");
 
 async function loadDashboard() {
   try {
@@ -154,9 +150,3 @@ const suiteRoom = new SuiteRoom(
 
 console.log(room.discountedPrice(10)); // 2250
 console.log(suiteRoom.discountedPrice(10)); // 2137.5
-
-// Git (3 min)
-// G · Git Workflow   3 min · 5 marks
-// ●	In your working folder: git init, commit the starter files, create branch feature/rooms-discount, make one change + commit, then merge it into main with --no-ff.
-// ●	Save the result: git log --oneline --graph --all > git-log.txt.
-// ●	In answers.md (2 lines): the command you'd use to REBASE the feature branch onto main instead, and a one-line Pull Request title for this change.
