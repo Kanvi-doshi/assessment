@@ -2,10 +2,13 @@
 // 1.
 console.log(true + 1, "3" * "4"); //2 12
 
+console.log(1+1);
+console.log(3*4);
+
 // 2.
-const o = { a: 1 };
-const p = o;
-p.a = 2;
+const o = { a: 1 }; //o.a=1
+const p = o; //p=o.a 
+p.a = 2; 
 console.log(o.a); //2
 
 // 3.
